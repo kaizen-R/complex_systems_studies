@@ -45,7 +45,7 @@ next_map <- the_map
 ## Not in RStudio/so post-processing visualization, but can be made fast:
 library(animation)
 saveHTML({
-  for(t_step in 1:1000) {
+  for(t_step in 1:1000) { ## CAREFUL! This creates 1000 images, plus CSS/JS/HTML!
     
     ## Lit by neighbour(s) on fire:
     t_trees <- which(the_map == pos_tree)
